@@ -22,6 +22,7 @@ namespace Cronometro
         
             string opcao = Console.ReadLine().ToLower();
             char medida =  char.Parse(opcao.Substring(opcao.Length-1,1)); //Pegar o ultimo caractere da string
+            int tempo = int.Parse(opcao.Substring(0,opcao.Length-1));//Pegar o tempo inserido
             
         }
 
