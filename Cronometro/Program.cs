@@ -6,7 +6,7 @@ namespace Cronometro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Teste");
+            Start();
         }
 
         static void Start()
@@ -16,8 +16,10 @@ namespace Cronometro
 
             while (currentTime != time)
             {
+                Console.Clear();
                 currentTime++;
-                
+                Console.WriteLine(currentTime);
+                Thread.Sleep(1000);
             }
         }
     }
