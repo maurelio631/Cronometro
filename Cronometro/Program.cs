@@ -16,9 +16,15 @@ namespace Cronometro
             Console.WriteLine("");
             Console.WriteLine("Selecione a opção desejada");
             Console.WriteLine("");
-            Console.WriteLine("S - Segundos");
-            Console.WriteLine("M - Minutos");
+            Console.WriteLine("S - Segundos - 10s = 10 segundos");
+            Console.WriteLine("M - Minutos - 1m = 1 minuto");
             Console.WriteLine("E - Sair ");
+        
+            string opcao = Console.ReadLine().ToLower();
+
+
+
+
         }
 
         static void Start(int time)
