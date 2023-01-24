@@ -6,12 +6,24 @@ namespace Cronometro
     {
         static void Main(string[] args)
         {
-            Start();
+            Menu();
         }
 
-        static void Start()
+        static void Menu()
         {
-            int time = 10;
+            Console.Clear();
+            Console.WriteLine("Seja bem-vindo ao seu cronômetro!");
+            Console.WriteLine("");
+            Console.WriteLine("Selecione a opção desejada");
+            Console.WriteLine("");
+            Console.WriteLine("S - Segundos");
+            Console.WriteLine("M - Minutos");
+            Console.WriteLine("E - Sair ");
+        }
+
+        static void Start(int time)
+        {
+
             int currentTime = 0;
 
             while (currentTime != time)
@@ -21,6 +33,10 @@ namespace Cronometro
                 Console.WriteLine(currentTime);
                 Thread.Sleep(1000);
             }
+
+            Console.Clear();
+            Console.WriteLine("Cronômetro Finalizado");
+            Thread.Sleep(2000);
         }
     }
 }
