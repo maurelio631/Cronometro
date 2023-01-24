@@ -21,10 +21,8 @@ namespace Cronometro
             Console.WriteLine("E - Sair ");
         
             string opcao = Console.ReadLine().ToLower();
-
-
-
-
+            char medida =  char.Parse(opcao.Substring(opcao.Length-1,1)); //Pegar o ultimo caractere da string
+            
         }
 
         static void Start(int time)
